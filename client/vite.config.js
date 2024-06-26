@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     proxy: {
       '^/api': {
-        // target: 'https://thirukural-six.vercel.app',
-        target: 'http://localhost:3000',
+        target: 'https://thirukural-six.vercel.app',
+        // target: 'http://localhost:3000',
         changeOrigin: true
       }
     }
