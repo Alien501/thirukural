@@ -8,7 +8,6 @@ export default defineConfig({
       '^/api': {
         target: 'https://thirukural-six.vercel.app/',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }
   },
