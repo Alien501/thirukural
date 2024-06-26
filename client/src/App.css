@@ -1,0 +1,19 @@
+.home-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Footer desing (As I'm lazy as fck to create new file just writing here need to move it inside Footer folder, Someday I will :-)) */
+.footer {
+}
+
+.footer-link {
+    transition: all .6s ease;
+}
+
+.footer-link:hover {
+    color: #000;
+    background-color: #fff;
+}

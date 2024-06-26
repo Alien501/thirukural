@@ -71,7 +71,7 @@ const RandomKuralCard = () => {
     }
 
     return(
-        <Card shadow="sm" radius="md" className="max-w-[310px] min-w-[300px] mx-auto my-auto">
+        <Card shadow="sm" radius="md" className="max-w-[310px] min-w-[300px] mx-auto my-5">
             <CardHeader>
                 <div className="kural-detail-container text-xs font-light w-full">
                     <Chip
@@ -101,7 +101,7 @@ const RandomKuralCard = () => {
                     </p>
             </CardBody>
             <CardFooter className="flex justify-between">
-                <Popover placement="bottom">
+                <Popover placement="bottom" color="secondary">
                     <PopoverTrigger>
                         <Button variant="flat" radius="sm" className="h-8 w-7" color="secondary" isIconOnly>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-languages"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>

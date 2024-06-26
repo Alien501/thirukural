@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAllData, getDataByAdhigaram, getDataByIyaal, getDataByPaal } from "../details/getdetail.mjs";
+import { getAllAdhigaram, getAllData, getDataByAdhigaram, getDataByIyaal, getDataByPaal } from "../details/getdetail.mjs";
 import { getKuralByNo, getKuralInRange, getRandomKural } from "../details/getKural.mjs";
 
 const router = new Router();
@@ -54,6 +54,7 @@ So the API endpoints I need are as follows:
 router.get('/getdetails', getAllData);
 router.get('/getdetails/paal', getDataByPaal);
 router.get('/getdetails/iyal', getDataByIyaal);
+router.get('/getdetails/adhigaram/all', getAllAdhigaram);
 router.get('/getdetails/adhigaram', getDataByAdhigaram);
 
 /*

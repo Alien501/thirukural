@@ -1,0 +1,18 @@
+.card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-container svg {
+    stroke-dashoffset: 10px;
+    stroke-dasharray: 100px 100px;
+    transition: all .8s ease;
+    stroke-linecap: round;
+}
+
+.home-card:hover .card-image-container > svg {
+    stroke-dashoffset: 10px;
+    stroke-dasharray: 10px 10px;
+    stroke-width: 3px;
+}

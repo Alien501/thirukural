@@ -1,9 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import NavbarTop from './components/NavbarTop/NavbarTop'
-import RandomKuralCard from './components/RandomKuralCard/RandomKuralCard'
+import Footer from './components/Footer/Footer'
+
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage/HomePage'
+import AboutPage from './pages/AboutPage/AboutPage'
+import AdhigaramPage from './pages/AdhigaramPage/AdhigaramPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +14,12 @@ function App() {
   return (
     <>
       <NavbarTop />
-      <RandomKuralCard />
+      <Routes>
+        <Route element={<HomePage />} path='/' />
+        <Route element={<AboutPage />} path='/about' />
+        <Route element={<AdhigaramPage />} path='/adhigaram' />
+      </Routes>
+      <Footer />
     </>
   )
 }
