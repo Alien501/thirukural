@@ -4,6 +4,7 @@ import { getAllAdhigaram } from "../../api/getAllAdhigaram";
 import { Button, Select, SelectItem } from "@nextui-org/react";
 import { getAdhigaram } from "../../api/getAdhigaram";
 import AdhigaramCard from "../../components/AdhigaramCard/AdhigaramCard";
+import { useTranslation } from "react-i18next";
 
 const AdhigaramPage = () => {
     const [allAdhigaramData, setallAdhigaramData] = useState();
@@ -13,6 +14,7 @@ const AdhigaramPage = () => {
         isFetched: false
     });
     const [buttonState, setButtonState] = useState(false);
+    const { t } = useTranslation();
 
     const fetchallAdhigaramData = async () => {
         const res = await getAllAdhigaram();
@@ -45,6 +47,7 @@ const AdhigaramPage = () => {
     }
 
     useEffect(() => {
+        window.scroll(0, 0);
         if(localStorage.getItem('adhiData')){
             setallAdhigaramData(JSON.parse(localStorage.getItem('adhiData')));
         }else{
@@ -68,12 +71,13 @@ const AdhigaramPage = () => {
         const res = await fetchAdhigaram(adhigaramData.id);
     }
 
+
     return(
-        <div className="page-container">
+        <div className="page-container flex items-center flex-col justify-center">
             <Select
                 color="primary"
                 className="max-w-xs mx-auto block my-3"
-                label="Select Adhigaram"
+                label={t('selectadhi')}
                 variant="bordered"
                 onSelectionChange={onAdhigaramChoosed}
             >

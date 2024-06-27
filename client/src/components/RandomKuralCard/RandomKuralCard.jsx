@@ -88,8 +88,6 @@ const RandomKuralCard = () => {
                         >
                             {`${t('adhigaram')}: ${currentLanguage == 'en'? kuralData.adhigaramTranslation : (currentLanguage == 'ta')? kuralData.adhigaramTA: kuralData.adhigaramRoman}`}
                     </Chip>
-                    <p className="block"></p>
-                    <p className="block"></p>
                 </div>
             </CardHeader>
             <CardBody>

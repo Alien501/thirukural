@@ -19,6 +19,11 @@ const en = {
         'pe2': 'Rev W. H. Drew',
         'pe3': 'Rev. John Lazarus',
         'pe4': 'Mr F. W. Ellis',
+        'mv': 'Thiru Mu. Varadarasanar',
+        'mk': 'Thiru Mu. Karunanidhi',
+        'sp': 'Thiru Solomon Pappaiah',
+        'selectadhi': 'Select Chapter',
+
     }
 };
 
