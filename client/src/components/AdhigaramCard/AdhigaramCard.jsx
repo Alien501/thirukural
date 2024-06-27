@@ -24,7 +24,7 @@ const AdhigaramCard = ({data, isFetched}) => {
     }
 
     return(
-        <Card className="max-w-80 min-h-28 mx-auto">
+        <Card className="max-w-80 min-w-72 min-h-28 mx-auto">
             {
             isFetched?
             <>

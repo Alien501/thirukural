@@ -84,7 +84,7 @@ const AdhigaramPage = () => {
                 {
                     allAdhigaramData &&
                     Object.keys(allAdhigaramData).map(
-                        key => <SelectItem color="primary" variant="shadow"  startContent={key}>
+                        key => <SelectItem color="primary" variant="flat"  startContent={key}>
                             {allAdhigaramData[key]}
                             </SelectItem>
                     )

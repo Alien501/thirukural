@@ -2,7 +2,7 @@ import { details } from "../data/detail.mjs"
 import { checkIsThisCorrect } from "../utils/checkName.mjs";
 import { getPaalData } from "../utils/getPaalData.mjs";
 
-import { ADHHIGARAMLISTTA, PAALLIST } from "../data/const.mjs";
+import { ADHHIGARAMLISTTA, ILAYLISTTA, PAALLIST, PAALLISTTA } from "../data/const.mjs";
 import { ILAYLIST } from "../data/const.mjs";
 import { getIyalData } from "../utils/getIyalData.mjs";
 import { getAdhigaramData } from "../utils/getAdhigaramData.mjs";
@@ -92,10 +92,32 @@ const getAllAdhigaram = (req, res) => {
     )
 }
 
+const getAllIyal = (req, res) => {
+    return res.status(200).send(
+        {
+            message: 'Ok',
+            error: null,
+            data: ILAYLISTTA
+        }
+    )
+}
+
+const getAllPaal = (req, res) => {
+    return res.status(200).send(
+        {
+            message: 'Ok',
+            error: null,
+            data: PAALLISTTA
+        }
+    )
+}
+
 export {
     getAllData,
     getDataByPaal,
     getDataByIyaal,
     getDataByAdhigaram,
-    getAllAdhigaram
+    getAllAdhigaram,
+    getAllIyal,
+    getAllPaal,
 }

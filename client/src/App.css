@@ -14,6 +14,6 @@
 }
 
 .footer-link:hover {
-    color: #000;
+    color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
     background-color: #fff;
 }

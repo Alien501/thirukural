@@ -1,6 +1,6 @@
 .about-image-wrapper svg{
     stroke-width: 3px;
-    animation: animatePath 5s linear infinite;
+    animation: animatePath 5s linear infinite alternate;
     filter: drop-shadow(0px 0px 20px rgb(61, 255, 94));
 }
 

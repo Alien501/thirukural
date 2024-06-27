@@ -23,6 +23,7 @@ const en = {
         'mk': 'Thiru Mu. Karunanidhi',
         'sp': 'Thiru Solomon Pappaiah',
         'selectadhi': 'Select Chapter',
+        'selectIyal': 'Select Chapter Group',
 
     }
 };

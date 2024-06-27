@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage/HomePage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import AdhigaramPage from './pages/AdhigaramPage/AdhigaramPage'
 import KuralPage from './pages/KuralPage/KuralPage'
+import IyalPage from './pages/IyalPage/IyalPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route element={<AboutPage />} path='/about' />
         <Route element={<AdhigaramPage />} path='/adhigaram' />
         <Route element={<KuralPage />} path='/kural/:r' />
+        <Route element={<IyalPage />} path='/iyal' />
       </Routes>
       <Footer />
     </>
