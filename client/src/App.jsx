@@ -9,6 +9,9 @@ import AboutPage from './pages/AboutPage/AboutPage'
 import AdhigaramPage from './pages/AdhigaramPage/AdhigaramPage'
 import KuralPage from './pages/KuralPage/KuralPage'
 import IyalPage from './pages/IyalPage/IyalPage'
+import PaalPage from './pages/PaalPage/PaalPage'
+
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,8 +25,10 @@ function App() {
         <Route element={<AdhigaramPage />} path='/adhigaram' />
         <Route element={<KuralPage />} path='/kural/:r' />
         <Route element={<IyalPage />} path='/iyal' />
+        <Route element={<PaalPage />} path='/paal' />
       </Routes>
       <Footer />
+      <Analytics />
     </>
   )
 }

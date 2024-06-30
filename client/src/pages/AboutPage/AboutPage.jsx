@@ -14,7 +14,7 @@ const AboutPage = () => {
 
     return(
         <>
-        <Card className="about-page-card h-max w-[90%] mx-auto my-auto text-xs font-light leading-5 tracking-wider text-pretty my-3">
+        <Card className="about-page-card h-max w-[90%] mx-auto text-xs font-light leading-5 tracking-wider text-pretty my-3">
             <CardHeader className="about-image-wrapper max-h-32 max-w-32 mx-auto my-2 object-fit">
                 <ValluvarIcon />
             </CardHeader>

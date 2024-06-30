@@ -99,10 +99,10 @@ const IyalPage = () => {
             {
                 buttonState? 
                     <Button className="mx-auto my-4 rounded-md block" isLoading color="primary">
-                        Get Details
+                        {t('getDetails')}
                     </Button>:
                     <Button onClick={onButtonClicked} className="mx-auto my-4 rounded-md block" color="primary">
-                        Get Details
+                        {t('getDetails')}
                     </Button>
             }
             {
@@ -110,7 +110,7 @@ const IyalPage = () => {
                 <>
                     <div className="iyal-detail-container text-sm font-medium">
                         <h1>{iyalData.data.iyalName + ' | ' + iyalData.data.tar  + ' | ' + iyalData.data.translation}</h1>
-                        <h2>{`Total: ${iyalData.data.adhigarams.length}`}</h2>
+                        <h2>{`${t('total')}: ${iyalData.data.adhigarams.length}`}</h2>
                     </div>
                     <div className="adhigaram-card-container flex flex-wrap gap-3 w-full my-3">
                         {

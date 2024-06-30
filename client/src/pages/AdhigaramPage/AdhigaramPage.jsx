@@ -84,7 +84,7 @@ const AdhigaramPage = () => {
                 {
                     allAdhigaramData &&
                     Object.keys(allAdhigaramData).map(
-                        key => <SelectItem color="primary" variant="flat"  startContent={key}>
+                        key => <SelectItem color="primary" variant="flat" startContent={key}>
                             {allAdhigaramData[key]}
                             </SelectItem>
                     )
@@ -93,10 +93,10 @@ const AdhigaramPage = () => {
             {
                 buttonState? 
                     <Button className="mx-auto my-4 rounded-md block" isLoading color="primary">
-                        Get Details
+                        {t('getDetails')}
                     </Button>:
                     <Button onClick={onButtonClicked} className="mx-auto my-4 rounded-md block" color="primary">
-                        Get Details
+                        {t('getDetails')}
                     </Button>
             }
             <AdhigaramCard

@@ -28,7 +28,6 @@ const getDataByPaal = (req, res) => {
         throw new Error('Wrong query!');
     }
     const data = getPaalData(name);
-    console.log(data);
     return res.status(200).send(
         {
             message: 'Found!',

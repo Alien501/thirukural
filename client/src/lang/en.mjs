@@ -24,7 +24,10 @@ const en = {
         'sp': 'Thiru Solomon Pappaiah',
         'selectadhi': 'Select Chapter',
         'selectIyal': 'Select Chapter Group',
-
+        'total': 'Total',
+        'getDetails': 'Get Details',
+        'selectPaal': 'Select Section',
+        'created': 'Created by Alien501👽',
     }
 };
 

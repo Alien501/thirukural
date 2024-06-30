@@ -49,11 +49,12 @@ const HomePage = () => {
             <div className="home-menu-container">
                 {
                     homeItems.map(
-                        item =>
+                        (item) =>
                             <HomeCard
                                 icon={item.icon}
                                 text={item.text}
                                 onPress={() => onNavClick(item.to)}
+                                key={item.to}
                             />
                     )
                 }
