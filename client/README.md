@@ -1,8 +1,57 @@
-# React + Vite
+# 🖥️ Thirukural Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of the Thirukural application, built using React, NextUI, and Tailwind CSS. The frontend provides a user-friendly interface to access and interact with the Thirukural API.
 
-Currently, two official plugins are available:
+## 📦 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- NextUI
+- Tailwind CSS
+- React Router
+- Vercel Analytics
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Alien501/thirukural-frontend
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd thirukural-frontend
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
+
+The application will be running on `http://localhost:3000`.
+
+## 🗺️ Routing
+
+The application uses React Router for client-side routing. Below are the main routes:
+
+- **Home Page:** `/`
+- **About Page:** `/about`
+- **Adhigaram Page:** `/adhigaram`
+- **Kural Page:** `/kural/:r`
+- **Iyal Page:** `/iyal`
+- **Paal Page:** `/paal`
+
+## 📊 Analytics
+
+Vercel Analytics is integrated to track user interactions and gather insights.
+
+## 🎨 Styling
+
+The application leverages NextUI for UI components and Tailwind CSS for utility-first styling.
+
+## 🤝 Contributions
+
+Feel free to open issues or submit pull requests. Contributions are welcome!
+
+---
