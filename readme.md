@@ -113,6 +113,11 @@ GET /api/v1/getdetails
     ```
     - Example: `/api/v1/kural/1`
 
+## Try API
+For now you can try/use these API endpoints through following URL:
+
+https://thirukural-six.vercel.app/api/v1
+
 ---
 
 ## Frontend
