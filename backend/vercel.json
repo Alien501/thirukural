@@ -4,6 +4,5 @@
     { "source": "/(.*)", 
     "destination": "/api" 
     }
-  ],
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./backend/"  
+  ]
 }
